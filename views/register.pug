@@ -1,0 +1,24 @@
+extends layout
+
+block content 
+   div.main-container.row.main-content
+     div.col-md-12.col-md-offset-2#panel-content
+       h1.dispaly-4.m-b-2.headSign Sign In
+
+
+       //register Form
+       form(method='POST',action='/Register')
+         .form-group 
+          label(for='name') Name: 
+          input#name.form-control(type='text',placeholder='First and Last',name='name')
+         .form-group 
+          label(for='email') Email: 
+          input#email.form-control(type='text',placeholder='name@email.com' name='email')
+         .form-gruop 
+          label(for='pw') Password: 
+          input#pw.form-control(type='password',name='password')
+         .form-group 
+          label(for='pw2') Confirm Password: 
+          input#pw2.form-control(type='password',name='confirmPassword')
+         button.btn.btn-primary(type='submit') Sign In
+

@@ -1,0 +1,23 @@
+div.header
+  div.menu-bar
+    nav.navbar.navbar-expand-lg.navbar-light
+      a.navbar-brand(href="#")
+       img(src="img/logo.jpg")
+      button.navbar-toggler(type="button",data-toggle="collapse",data-target="#navbarNav",aria-controls="navbarNav",aria-expanded="false",aria-label="Toggle navigation")
+         i.fa.fa-bars 
+      div.collapse.navbar-collapse#navbarNav
+        ul.navbar-nav.ml-auto
+          li.nav-item
+            a.nav-link.home(href="") Home
+          li.nav-item
+            a.nav-link.Contact-Us(href="Contact-us") Contact-Us
+          li.nav-item
+            a.nav-link.About(href="About-us") About_us
+          li.nav-item 
+            a.nav-link.services(href="Services") Services    
+        div.buttonArea
+          button.btn.btn-outline-primary.signIn(style="color:#fff; font-size:24px; font-weight:bolder;") 
+            a(href="http://localhost:8080/Login") Log In
+          button.btn.btn-outline-success.registerB(style="color:#fff; font-size:24px; font-weight:bolder;") 
+            a(href="http://localhost:8080/Register") Register
+    

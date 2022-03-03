@@ -1,0 +1,215 @@
+/* Google Font CDN Link */
+ @import url('https://fonts.google.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: "Poppins" , sans-serif;
+}
+
+body
+{
+    position: relative;
+    height:100vh ;
+    width: 100%;
+    overflow: hidden;
+}
+
+img
+{
+  margin-right: 6px;
+  height: 2rem;
+}
+
+.sidebar
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 74px;
+    background: slategray;
+    padding: 6px 14px;
+    transition: all 0.5s ease;
+}
+
+.sidebar.active
+{
+    width: 240px;
+}
+
+.sidebar .logo_content
+{
+    display: flex;
+    padding: 5px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.sidebar.active .logo_content
+{
+    opacity: 1;
+    pointer-events: none;
+}
+
+.logo_content .logo-word
+{
+    color: #fff;
+    font-weight: 900;
+    line-height: 30px;
+}
+.sidebar #btn
+{
+    position: absolute;
+    color: #fff;
+    left: 50%;
+    margin-right: 0;
+    top: 1px;
+    font-size: 20px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    transform: translateX(-50%); 
+}
+
+.sidebar.active #btn
+{
+    left: 90%;
+}
+
+.sidebar ul
+{
+   margin-top: 20px;
+}
+
+
+.sidebar ul li
+{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-left: 5px;
+    list-style: none;
+}
+
+/* .tool */
+.sidebar ul li .tool
+{
+    position: absolute;
+    left: 122px;
+    top: 0;
+    transform: translate(-50% , -50%);
+    border-radius: 6px;
+    height: 35px;
+    width: 122px;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0 5px 10px slategray;
+    transition: 0s;
+    opacity: 0;
+    pointer-events: none;
+    display: block;
+}
+
+.sidebar.active ul li .tool
+{
+    display: none;
+}
+
+.sidebar ul li:hover .tool
+{
+    transition: all 0.5s ease;
+    opacity: 1;
+    top: 50%;
+}
+
+
+.sidebar ul li input
+{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    border-radius:12px ;
+    outline: none;
+    border: none;
+    background: #1d1b31;
+    padding-left: 50px ;
+    font-size: 18px;
+    color: #fff;
+
+}
+
+.sidebar ul li .bx-search
+{
+    position: absolute;
+    z-index: 99;
+    color: #fff;
+    font-size: 22px;
+    padding-left: 15px;
+    transition: all 0.5s ease;
+}
+
+.sidebar ul li .bx-search:hover
+{
+    background: #fff;
+    color: #1d1b31;
+}
+
+.sidebar ul li a
+{
+    color:#fff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    border-radius: 12px;
+    white-space: nowrap;
+}
+
+
+.sidebar ul li a:hover
+{
+    color:#11101d;
+    background: #fff;
+    cursor: pointer;
+}
+
+.sidebar ul li i
+{
+    height: 50px;
+    min-width: 50px;
+    border-radius: 12px;
+    line-height: 50px;
+    padding-left: 15px;
+}
+
+.sidebar .links_name
+{
+    opacity: 0;
+    pointer-events: none;
+}
+
+.sidebar.active .links_name
+{
+    opacity: 1;
+    pointer-events: auto
+}
+
+.sidebar .bx-log-out
+{
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform:translateX(-50%);
+    font-size: 30px;
+    color: #fff;
+}
+
+.sidebar.active .bx-log-out
+{
+    left: 88%;;
+}

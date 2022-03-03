@@ -1,0 +1,69 @@
+doctype html(lang='en')
+head 
+   meta(charset="UTF-8")
+   meta(name="viewport",content="width=device-width, initial-scale=1.0")
+   link(rel="stylesheet",href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css")
+   link(href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css',rel='stylesheet')
+   title MY WEBSITE| #{title}
+   link(rel="stylesheet",type="text/css",href="/css/inmain.css")
+
+body
+ .sidebar 
+   .logo_content
+      img(src="img/logo.jpg")
+      div.logo-word Jac.Inc
+   i.bx.bx-menu#btn
+   ul.nav_list 
+    li 
+      i.bx.bx-search
+      input(type="text",placeholder="search.....")
+      div.tool Search
+    li  
+      a(href="#")
+        i.bx.bx-user
+        span.links_name User
+      div.tool User
+    li  
+      a(href="#")
+        i.bx.bx-grid-alt 
+        span.links_name Packages 
+      div.tool Packages 
+    li  
+        a(href="#")
+          i.bx.bx-grid-alt 
+          span.links_name Gallery
+        div.tool  Gallery
+    li  
+      a(href="#")
+        i.bx.bx-grid-alt 
+        span.links_name Review
+      div.tool Review
+    li  
+      a(href="#")
+        i.bx.bx-grid-alt 
+        span.links_name Book Now
+      div.tool Book Now
+    li  
+      a(href="#")
+        i.bx.bx-cog 
+        span.links_name Setting 
+      div.tool Setting 
+    a(href="http://localhost:8080/")
+        i.bx.bx-log-out
+
+   script.
+     let btn = document.querySelector('#btn');
+     let sidebar = document.querySelector('.sidebar');
+     let searchbtn = document.querySelector('.bx-search');
+
+     btn.onclick = function (){
+       sidebar.classList.toggle("active");
+     }
+     
+     searchbtn.onclick = function (){
+       sidebar.classList.toggle("active");
+     }
+    $('.bx-log-out').on("click",()=>{
+      $('a').attr('href','http://localhost:8080/')
+    })
+     

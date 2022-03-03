@@ -1,0 +1,316 @@
+*{
+    margin: 0           ;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+body
+{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0,0,0,.7)), url('/img/landscape.jpg');
+    height: 120vh;
+    width: 100%;
+    background-repeat: no-repeat;
+
+}
+label{
+    color:#eee;
+}
+
+.menu-bar
+{
+    background-image: linear-gradient(-90deg, #d38312,#a83279);
+}
+
+#navbarNav
+{
+    font-size: 1.3em;
+    padding: 7px;
+    position: relative;
+    transition: 1.5ms;
+
+}
+
+
+#navbarNav ul li a
+{
+    color: #fff;
+    text-decoration: none!important;
+    transition: 0.5s;
+}
+
+#navbarNav ul li a:hover
+{
+    border-bottom: 2.5px solid rgb(0,0,0);
+    padding-bottom: 0%;
+}
+
+
+.buttonArea
+{
+    padding-left: 10px;
+    margin-left: 10px;
+}
+
+.signIn
+{
+padding-left: 5px;
+}
+
+
+
+
+.menu-bar .navbar-toggler
+{
+    margin-right:0 ;
+    padding-right:1rem ;
+    outline: none!important ;
+    border: none!important;
+}
+
+.navbar .fa
+{
+    color:#fff;
+    font-size: 2em      ;
+}
+
+
+.navbar-brand img
+{
+    width: 2em;
+    margin-top:5px ;
+    margin-left: 20px;
+}
+
+.intro-box
+{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left:50% ;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.intro-box h1
+{
+    font-size: 62px;
+    font-weight: bold;
+}
+
+.intro-box p
+{
+    margin: 10px 0 40px;
+    font-size: 15px;
+    color: #fff;
+    font-weight: bolder;
+}
+
+.Enjoy-button
+{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+    font-weight: bold;
+    border: 2px solid #fff;
+    padding: 12px 34px;
+    background:transparent;
+    position: relative;
+    cursor: pointer;
+
+}
+
+#closebutton
+{
+    display: none;
+}
+
+
+
+@media only screen and (max-width:1000px)
+{
+     body 
+     {
+      background-repeat: no-repeat; 
+      min-height: 100vh;
+      width: 100%; 
+      /* padding-top: 65px; */
+    } 
+     
+    #navbarNav ul li a
+    {
+        display: block;
+        border-bottom: none!important;
+        padding-top: 20px;
+    }
+
+    #navbarNav ul li a:hover
+    {
+        box-shadow: #32a87b;
+    }
+
+     #navbarNav
+     {
+         position:absolute ;
+         background: linear-gradient( -0deg, #d38312,#a83279);
+         height: 100vh;
+         width: 200px;
+         top: 70px;
+         right:0;
+         text-align: left;
+         z-index: 2;
+     }
+
+     #closebutton
+     {
+         display: none;
+         color: #fff;
+         margin: 10px;
+         font-size: 22px;
+         cursor: pointer;
+     }
+
+    /* .nav-link
+    {
+        display: block;
+       z-index: 7;
+    }
+
+    .nav-link:hover
+    {
+        padding-bottom :none!important;
+        border-bottom: none!important;
+    } */
+
+
+    .buttonArea
+    {
+        text-decoration: none;
+        padding-left:0 ;
+    }
+
+    #navbarNav  .signIn 
+     {
+       margin-top: 20px;
+       margin-left: 0;
+       text-align: left;
+     }
+       
+     #navbarNav .registerB
+     {
+        margin-top: 20px;
+        text-align: left;
+     }
+
+
+     .intro-box
+     {
+        font-size: 20px ;
+        text-align: center;
+     }
+     /* .intro-box
+     {
+     width: 80%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left:50% ;
+    transform: translate(-50%, -50%);
+    text-align: center;
+     } */
+
+        
+    #panel-content
+    {
+        padding-left:20%;
+        padding-right:20% ;
+        font-weight: bolder;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    
+    #loginContent
+    {
+        padding-left:14%;
+        padding-right:14% ;
+        font-weight: bolder;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+}
+
+
+.footer-container
+{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-image: linear-gradient(#b6d312,#32a87b);
+    height: 2em;
+    font-size: 1.2rem;
+}
+
+#footer
+{
+    line-height: 2em;
+    font-weight: bold;
+    width: auto;
+    text-align: center;
+}
+
+.mainService-box
+{
+    width: 90%;
+    color: rgb(66, 135, 245);
+    position: absolute;
+    top: 50%;
+    left:50% ;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.openText
+{
+   font-weight: bolder;
+   font-size: 45px;
+}
+
+/* register part */
+.main-content
+{
+  width: 100%;
+  height: 80%;
+
+}
+
+#panel-content
+{
+    padding-left:35%;
+    padding-right:35% ;
+    font-weight: bolder;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(12, 10, 10);
+    font-weight: bolder;
+}
+
+.headSign
+{
+    color: rgb(12, 10, 10);
+    font-weight: bolder;
+    text-align: center;
+}
+
+/* login part */
+.loginmain
+{
+    width:100%;
+    height: 80%;
+}
+
+#loginContent
+{
+    padding-left:35%;
+    padding-right:35% ;
+    font-weight: bolder;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(12, 10, 10);
+    font-weight: bolder;
+}
