@@ -48,9 +48,9 @@ body
         i.bx.bx-cog 
         span.links_name Setting 
       div.tool Setting 
-    a(href="http://localhost:8080/")
+    a(href="http://localhost:8080/logout") 
         i.bx.bx-log-out
-
+        span.links_name log out
    script.
      let btn = document.querySelector('#btn');
      let sidebar = document.querySelector('.sidebar');
@@ -63,7 +63,5 @@ body
      searchbtn.onclick = function (){
        sidebar.classList.toggle("active");
      }
-    $('.bx-log-out').on("click",()=>{
-      $('a').attr('href','http://localhost:8080/')
-    })
+   
      
